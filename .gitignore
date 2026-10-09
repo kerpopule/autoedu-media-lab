@@ -1,0 +1,16 @@
+# Private configuration and generated state are never published.
+config/local.env
+config/local/*
+!config/local/README.md
+.env
+.env.*
+!.env.example
+providers.json
+vapid_private.pem
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.worktrees/
+.artifacts/
+.pytest_cache/

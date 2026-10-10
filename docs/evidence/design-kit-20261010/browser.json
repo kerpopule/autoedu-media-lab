@@ -1,0 +1,138 @@
+{
+  "pass": true,
+  "results": [
+    {
+      "name": "empty brief shows useful error",
+      "pass": true
+    },
+    {
+      "name": "four editable output cards",
+      "pass": true
+    },
+    {
+      "name": "planning starts no jobs",
+      "pass": true
+    },
+    {
+      "name": "no horizontal overflow 320",
+      "pass": true
+    },
+    {
+      "name": "all draft controls labeled 320",
+      "pass": true
+    },
+    {
+      "name": "no horizontal overflow 375",
+      "pass": true
+    },
+    {
+      "name": "all draft controls labeled 375",
+      "pass": true
+    },
+    {
+      "name": "no horizontal overflow 768",
+      "pass": true
+    },
+    {
+      "name": "all draft controls labeled 768",
+      "pass": true
+    },
+    {
+      "name": "no horizontal overflow 1440",
+      "pass": true
+    },
+    {
+      "name": "all draft controls labeled 1440",
+      "pass": true
+    },
+    {
+      "name": "export preserves edits",
+      "pass": true
+    },
+    {
+      "name": "no script injection",
+      "pass": true
+    },
+    {
+      "name": "malformed import retains drafts",
+      "pass": true
+    },
+    {
+      "name": "import restores edits",
+      "pass": true
+    },
+    {
+      "name": "changed brief requires explicit rebuild",
+      "pass": true
+    },
+    {
+      "name": "stale brief did not overwrite image maker",
+      "pass": true
+    },
+    {
+      "name": "image handoff preserves edited prompt",
+      "pass": true
+    },
+    {
+      "name": "image handoff sets portrait",
+      "pass": true
+    },
+    {
+      "name": "handoff keeps engine",
+      "pass": true
+    },
+    {
+      "name": "handoff starts no jobs",
+      "pass": true
+    },
+    {
+      "name": "video handoff switches actual tab",
+      "pass": true
+    },
+    {
+      "name": "video handoff uses portrait",
+      "pass": true
+    },
+    {
+      "name": "video handoff uses motion draft",
+      "pass": true
+    },
+    {
+      "name": "long video prompt blocked without truncation",
+      "pass": true
+    },
+    {
+      "name": "video draft did not overwrite maker",
+      "pass": true
+    },
+    {
+      "name": "export import and handoffs did not send requests",
+      "pass": true
+    },
+    {
+      "name": "existing Make button uses canonical image queue",
+      "pass": true
+    },
+    {
+      "name": "maker submits chosen prompt and shape",
+      "pass": true
+    },
+    {
+      "name": "existing maker recovers from engine error",
+      "pass": true
+    },
+    {
+      "name": "no JavaScript errors in real frontend fixture",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "writes": [
+    {
+      "path": "/api/image",
+      "body": "{\"prompt\":\"Edited <script>window.__injected=1</script> poster concept.\",\"style\":\"none\",\"engine\":\"qwen\",\"orientation\":\"portrait\",\"cast\":[]}"
+    }
+  ],
+  "fixture": true,
+  "cleanup": "Owned context and browser closed; no server or live API used."
+}

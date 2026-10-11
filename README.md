@@ -24,6 +24,10 @@ and charge for generation. Engine support and licenses vary; see the
 - **Duet direction (planning)** — a reusable two-lead music-video recipe with an authored schematic GIF, natural expressions, varied camera coverage, original-audio preservation and isolated repairs. Local duet performance and CQ enhancement remain unqualified. See [docs/DUET-MUSIC-VIDEO.md](docs/DUET-MUSIC-VIDEO.md).
 - **Images** — generation, SAM-powered tap-to-select editing, Qwen-Image-2.1,
   and a big template library.
+- **Design a campaign kit (planning)** — one brief becomes editable poster,
+  square social, wide thumbnail and motion prompts, with shared brand direction,
+  JSON export/import and deliberate handoff to the existing makers. No automatic
+  jobs or cloud planning calls. See [docs/DESIGN-KIT.md](docs/DESIGN-KIT.md).
 - **Characters** — reusable identities with consistent look and voice
   (Voicebox voice cloning included).
 - **Sparky** — a chat director that plans, queues, and narrates the work.

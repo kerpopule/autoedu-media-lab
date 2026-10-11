@@ -1,6 +1,6 @@
 /* Media Lab service worker — app shell cached for instant open,
    network-first for API and media, web push for finished creations. */
-const CACHE = "medialab-studio-v24";
+const CACHE = "medialab-studio-v25";
 const SHELL = [
   "/",
   "/cut",
@@ -11,6 +11,9 @@ const SHELL = [
   "/static/medialab-chat.js",
   "/static/image-templates.css",
   "/static/image-templates.js",
+  "/static/design-kit.css",
+  "/static/design-kit.js",
+  "/static/design-kit-ui.js",
   "/static/icons/icon-192.png",
   "/static/icons/icon-512.png",
 ];

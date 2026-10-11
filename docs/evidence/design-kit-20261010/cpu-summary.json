@@ -1,0 +1,24 @@
+{
+  "command": "python -m pytest -q -rs -m 'not spark' --junitxml=docs/evidence/design-kit-20261010/cpu-results.xml",
+  "raw_receipt_sha256": "65cd44b38597e54944915c2e34dc8ca4d47861deb79c2e9549c4a8b3b61d3e43",
+  "suites": [
+    {
+      "name": "pytest",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "9",
+      "tests": "3487",
+      "time": "274.346",
+      "timestamp": "2026-10-10T03:46:00.583121-05:00",
+      "hostname": "redacted build host"
+    }
+  ],
+  "console_summary": {
+    "passed": 1712,
+    "skipped": 9,
+    "deselected": 4,
+    "warnings": 19,
+    "subtests_passed": 1766
+  },
+  "notes": "Derived from real JUnit receipt; host identity excluded. Raw receipt retained privately outside the public source tree. No live inference performed."
+}

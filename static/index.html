@@ -48,6 +48,7 @@
 <link rel="apple-touch-icon" href="/static/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" href="/static/icons/icon-192.png">
 <link rel="stylesheet" href="/static/image-templates.css?v=2">
+<link rel="stylesheet" href="/static/design-kit.css?v=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -1123,6 +1124,26 @@
 
   <!-- ================= IMAGES ================= -->
   <section class="tab" id="tab-images">
+  <details class="dk-workspace" id="designKit">
+    <summary><span><strong>Design a campaign kit</strong><small>One brief. Coordinated poster, social graphic, thumbnail and motion concept.</small></span></summary>
+    <div class="dk-body">
+      <p class="dk-note">Plan locally, edit every draft, then use the existing makers. No cloud calls, new engines or automatic renders. Your drafts stay in this tab until you export them; refreshing clears them.</p>
+      <div class="dk-fields">
+        <div><label for="dkBrand">Brand or project</label><input type="text" id="dkBrand" maxlength="120" placeholder="Your project name"></div>
+        <div><label for="dkCopy">Headline or copy</label><input type="text" id="dkCopy" maxlength="500" placeholder="Your exact intended headline"></div>
+        <div class="dk-full"><label for="dkBrief">Campaign brief</label><textarea id="dkBrief" maxlength="4000" placeholder="What are we promoting, for whom, and what should they feel or do?"></textarea></div>
+        <div class="dk-full"><label for="dkLook">Shared visual direction</label><textarea id="dkLook" maxlength="1000" placeholder="Palette, lighting, subject, materials and mood. Example: warm paper, forest green, soft morning light."></textarea></div>
+      </div>
+      <div class="dk-actions">
+        <button type="button" class="dk-button dk-primary" id="dkBuild">Build draft kit</button>
+        <button type="button" class="dk-button" id="dkExport" disabled>Export kit JSON</button>
+      </div>
+      <label class="dk-import" for="dkImport">Restore an exported kit<input type="file" id="dkImport" accept=".json,application/json"></label>
+      <p class="dk-note">These are prompts, not finished artwork. Shared direction guides consistency but does not guarantee it. Add and verify typography, logos and claims in an editor. Engine, style, cast and licensing choices remain yours.</p>
+      <p id="dkStatus" role="status" aria-live="polite">Add a brief to start. No GPU or network required for planning.</p>
+      <div class="dk-outputs" id="dkOutputs"></div>
+    </div>
+  </details>
   <div class="card">
     <button class="image-template-launch" id="imageTemplateLaunch" type="button">
       <span><strong>Explore 523 image templates</strong><small>Search local previews, edit a prompt, or refine one with chat</small></span>
@@ -5477,6 +5498,8 @@ if(new URLSearchParams(location.search).get('queue')){
 }
 </script>
 <script src="/static/image-templates.js?v=5"></script>
+<script src="/static/design-kit.js?v=1"></script>
+<script src="/static/design-kit-ui.js?v=1"></script>
 <script>window.MEDIALAB_CHAT_BOTTOM=80;</script>
 <script src="/static/medialab-chat.js?v=16"></script>
 <script>
